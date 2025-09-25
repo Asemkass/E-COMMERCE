@@ -2,6 +2,8 @@
 Olist brazilian E-commerce dataset
  О проекте
 Этот проект представляет собой комплексный анализ данных бразильского e-commerce магазина Olist. Включает создание базы данных PostgreSQL, импорт данных, выполнение аналитических запросов и визуализацию результатов.
+![photo_5377409100700319155_y](https://github.com/user-attachments/assets/cfa6fcb5-10ac-409b-b5aa-c53d6d6a814e)
+
 Установка PostgreSQL
 Скачайте PostgreSQL с официального сайта
 
@@ -27,6 +29,7 @@ olist_products - информация о товарах
 
 Примеры Sql запросов
 Топ-10 продавцов по количеству продаж
+
 SELECT 
     s.seller_id, 
     s.seller_city, 
@@ -41,6 +44,7 @@ ORDER BY total_orders DESC
 LIMIT 10;
 
 сколько заказов получают отзывы
+
 SELECT 
     CASE 
         WHEN r.review_id IS NOT NULL THEN 'With Review'
@@ -56,6 +60,7 @@ WHERE o.order_status = 'delivered'
 GROUP BY review_status;
 
 сколько заказов получают отзывы
+
 SELECT 
     CASE 
         WHEN r.review_id IS NOT NULL THEN 'With Review'
