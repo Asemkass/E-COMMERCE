@@ -27,6 +27,10 @@ olist_order_reviews - отзывы клиентов
 
 olist_products - информация о товарах
 
+olist_sellers - данные продавцов
+
+product_category_name_translation - переводы категорий товаров
+
 Примеры Sql запросов
 Топ-10 продавцов по количеству продаж
 
@@ -80,6 +84,3 @@ GROUP BY review_status;
 Реализованы SQL-запросы для анализа заказов, оплат, отзывов и географии.
 Построены визуализации в Python.
 
-olist_sellers - данные продавцов
-
-product_category_name_translation - переводы категорий товаров
